@@ -146,19 +146,7 @@ aside {
     color: #F05F40;
   }
 }
-header {
-  position: relative;
-  width: 100%;
-  min-height: auto;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: center;
-  background-image: url('../img/header.jpg');
-  text-align: center;
-  color: white;
-}
+
 header .header-content {
   position: relative;
   text-align: center;
@@ -486,6 +474,7 @@ header {
     background-image: url(../img/slide1.jpg);
     color: #fff;
 }
+<<<<<<< HEAD
 .navbar-inverse .navbar-nav>li>a {
     color: #222222 !important;
 }
@@ -497,8 +486,10 @@ color: #f9b129 !important;}
     background-color: rgba(0,0,0,.075);
 }
 =======
+/*Anis work */
 #col.footerLinks {
     line-height: 2.3;
+
 }
 
 #col.col-xs-4 {
@@ -506,5 +497,5 @@ color: #f9b129 !important;}
 }
 
 #col.footerLinks-title {
-    text-transform: upercase ;
+    text-transform: uppercase ;
 }
