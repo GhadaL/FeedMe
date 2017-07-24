@@ -1,0 +1,98 @@
+<html ng-app="appmodule">
+<head>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="      crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+<script src="script.js"></script>
+</head>
+
+
+
+
+<body ng-controller="logincontroller">
+     <li><a href="" ng-click="logout()" target="_self">Log Out</a></li>
+    <h1>{{userName}}</h1>
+    <table class="table table-bordered table-striped table-condensed">
+        <tr>
+            <td>
+                <table class="table table-bordered table-striped table-condensed">
+                    <tr>
+                        <td>Email:</td>
+                        <td>
+                            <input type="text" class="form-control"
+                                  ng-model="userRegistrationEmail" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td>
+                            <input type="password" class="form-control"
+                                   ng-model="userRegistrationPassword" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Confirm Password:</td>
+                        <td>
+                            <input type="password" class="form-control"
+                                   ng-model="userRegistrationConfirmPassword" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" value="Register"
+                                   class="form-control btn btn-success"
+                                   ng-click="registerUser()" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td></td>
+            <td></td>
+            <td>
+                <table class="table table-bordered table-striped table-condensed">
+                    <tr>
+                        <td>Email:</td>
+                        <td>
+                            <input type="text" class="form-control"
+                                   ng-model="userLoginEmail" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td>
+                            <input type="password"
+                                   class="form-control"
+                                   ng-model="userLoginPassword" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" value="Login" class="form-control btn btn-success"
+                                   ng-click="login()" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+ 
+    <div> </div>
+ 
+
+</body>
+</html>
