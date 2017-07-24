@@ -414,3 +414,14 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+#col.footerLinks {
+    line-height: 2.3;
+}
+
+#col.col-xs-4 {
+    width: 33.33333333%;
+}
+
+#col.footerLinks-title {
+    text-transform: upercase ;
+}
