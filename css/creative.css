@@ -470,7 +470,7 @@ body {
     padding-left: 20px;
     padding-right: 23px;
     padding-top: 5px;
-    
+
 }
 
 header {
@@ -511,4 +511,80 @@ color: #f9b129 !important;}
 
 #col.footerLinks-title {
     text-transform: uppercase ;
+}
+
+.moto-text_system_7 {
+
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Changa One', display;
+    color: #2b2c2f;
+    font-size: 34px;
+    line-height: 1.2;
+    letter-spacing: 0px;
+}
+
+.moto-color5_5 {
+    color: #ffffff;
+}
+
+.moto-widget-contact_form.moto-preset-3 .moto-widget-contact_form-group {
+    display: inline-block !important;
+}
+
+.moto-widget-button.moto-preset-default .moto-widget-button-link {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    background-color: #ec5353;
+    border-color: #ec5353;
+}
+
+.moto-widget-button .moto-widget-button-link {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    transition: all .3s;
+    line-height: 1;
+    border-width: 2px;
+    border-style: solid;
+    padding: 15.5px 36.5px;
+    border-radius: 35px;
+    letter-spacing: 0.8px;
+}
+
+.moto-widget-button .moto-widget-button-link {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.moto-widget-contact_form.moto-preset-3 .moto-widget-contact_form-form .moto-widget-contact_form-field {
+    color: #2b2c2f;
+    background-color: #ffffff;
+    font-style: normal;
+    font-weight: 400;
+    border-color: transparent;
+}
+.moto-widget-contact_form.moto-preset-3 .moto-widget-contact_form-group .moto-widget-contact_form-field {
+    display: inline-block;
+    width: 290px;
+}
+
+.moto-widget-contact_form .moto-widget-contact_form-group .moto-widget-contact_form-field {
+    font-size: 14px;
+    padding: 10px 20px;
+    line-height: normal;
+    height: 50px;
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 35px;
+}
+
+.moto-widget-contact_form.moto-preset-2 .moto-widget-contact_form-buttons {
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
 }
