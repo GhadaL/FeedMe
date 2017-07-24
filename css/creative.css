@@ -414,6 +414,7 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+<<<<<<< HEAD
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 body {
   font-family: 'Open Sans', 'sans-serif';
@@ -484,4 +485,16 @@ header {
     background-position: center;
     background-image: url(../img/slide1.jpg);
     color: #fff;
+}
+=======
+#col.footerLinks {
+    line-height: 2.3;
+}
+
+#col.col-xs-4 {
+    width: 33.33333333%;
+}
+
+#col.footerLinks-title {
+    text-transform: upercase ;
 }
