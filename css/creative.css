@@ -486,9 +486,10 @@ header {
     background-image: url(../img/slide1.jpg);
     color: #fff;
 }
-=======
+
 #col.footerLinks {
     line-height: 2.3;
+
 }
 
 #col.col-xs-4 {
@@ -496,5 +497,5 @@ header {
 }
 
 #col.footerLinks-title {
-    text-transform: upercase ;
+    text-transform: uppercase ;
 }
