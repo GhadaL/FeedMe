@@ -90,64 +90,18 @@
 		</ul>
         <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-          <a href="#" role="button" aria-expanded="false" onclick="document.getElementById('id01').style.display='block'">Log in </a>
+          <a href="#" ><?=$_SESSION['username'] ?> </a>
 
         </li>
 
-<!-- The Modal -->
-<div id="id01" class="modal" style="display: none;">
-  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
-
-  <!-- Modal Content -->
-  <form class="modal-content animate" action="/index.php">
-    <div class="container" style="
-    width: 100%;
-">
-      <label><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required="">
-
-      <label><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required="">
-
-      <button type="submit">Login</button>
-      <input type="checkbox" checked="checked"> Remember me
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1;width: 100%;">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
-
-<li class="dropdown">
-          <a href="#" role="button" onclick="document.getElementById('id02').style.display='block'">Sign up</a>
-          <!-- The Modal (contains the Sign Up form) -->
-          <div id="id02" class="modal" style="display: block;">
-            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
-            <form class="modal-content animate" action="index.php">
-              <div class="container" style="width: 100%;">
-                <label><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="username" required="">
-
-                <label><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required="">
-
-                <label><b>Repeat Password</b></label>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" required="">
-                <input type="checkbox" checked="checked"> Remember me
-                <p>By creating an account you agree to our <a href="#">Terms &amp; Privacy</a>.</p>
-
-                <div class="clearfix">
-                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                  <button type="submit" class="signupbtn">Sign Up</button>
-                </div>
-              </div>
-            </form>
-          </div>
+        <li class="dropdown">
+          <a href="home.php" role="button" aria-expanded="false" onclick="document.getElementById('id01').style.display='block'">sign out </a>
 
         </li>
-        <li><a href="#">Become a partner</a></li>
+
+        <li>
+          <a href="#">Become a partner</a>
+        </li>
       </ul>
 	</div><!-- /.nav-collapse -->
   </nav>
