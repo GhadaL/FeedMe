@@ -1,3 +1,21 @@
+<?php
+session_start();
+    include('db.php');
+
+    if(isset($_POST['submit'])){
+      $name = $_POST['username'] ;
+      $result = $db->query("SELECT * FROM user where username='$name' ");
+      $row =$result->fetch_array();
+    if($_POST['username']== $row['username'] && $_POST['psw']== $row['password']){
+    $_SESSION['signed_in']=true ;
+    $_SESSION['username']=$_POST['username'];
+    header('location: home.php');}
+    else
+    header('location: home.php?error');
+
+    }
+
+?>
 
 <!DOCTYPE html>
 <html lang="en"><head>
@@ -143,20 +161,24 @@
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
 
   <!-- Modal Content -->
-  <form class="modal-content animate" action="/index.php">
+  <form class="modal-content animate" action="home.php" method="post">
     <div class="container" style="
     width: 100%;
 ">
       <label><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required="">
+      <input type="text" placeholder="Enter Username" name="username" required="">
 
       <label><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required="">
 
-      <button type="submit">Login</button>
+      <button type="submit" name="submit">Login</button>
       <input type="checkbox" checked="checked"> Remember me
-    </div>
 
+    </div>
+    <?php
+    if (isset($_GET['error'])) :  ?>
+    <p style="color:red;">Invalid username or password </p>
+    <?php endif;  ?>
     <div class="container" style="background-color:#f1f1f1;width: 100%;">
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
       <span class="psw">Forgot <a href="#">password?</a></span>
