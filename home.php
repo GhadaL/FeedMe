@@ -496,19 +496,16 @@ Don’t miss The FeedMe special operations to win more Yummys!</p>
     }
     </script>
 
-<<<<<<< HEAD
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
-=======
-
-
-
-
-
-
-
-
-
-
-</body></html>
->>>>>>> 2b9d0cadbb3038f3f4b5bc49c2e25f006a6ef3d4
