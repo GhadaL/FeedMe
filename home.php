@@ -3,11 +3,6 @@ session_start();
     include('db.php');
     //$_SESSION['signed_in']=true ;
 
-
-<<<<<<< HEAD
-
-
-=======
     if(isset($_POST['submit'])){
       $name = $_POST['username'] ;
       $result = $conn->query("SELECT * FROM user where username='$name' ");
@@ -19,7 +14,7 @@ session_start();
     else
     header('location: home.php?error');
     }
->>>>>>> 2b9d0cadbb3038f3f4b5bc49c2e25f006a6ef3d4
+
 ?>
 
 <!DOCTYPE html>
