@@ -506,6 +506,11 @@ color: #f9b129 !important;}
     color: black !important;
 
 }
+.panel-primary>.panel-heading {
+    color: #fff;
+    background-color: #f9b129;
+    border-color: #f9b129;
+}
 .footerTfm .footerTfm-content {
     font-family: 'Open Sans';
     font-weight: 400;

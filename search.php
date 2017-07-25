@@ -8,19 +8,22 @@
 <div class="container-fluid">
     <div class="row">
 		<div class="col-xs-6 col-sm-3">
-			<div id="accordion" class="panel panel-primary behclick-panel">
-				<div class="panel-heading">
-					<h3 class="panel-title">Search Filter Car</h3>
-				</div>
-				<div class="panel-body" >
-					<div class="panel-heading " >
+			<div id="accordion" class="panel panel-primary behclick-panel" style="
+    margin: 15px;
+    border-color: #f9b129;
+">
+<div class="panel-heading" style="border-color: #f9b129;background-color: #f9b129;">
+  <h3 class="panel-title">Search Filter Restaurant</h3>
+</div>
+				<div class="panel-body">
+					<div class="panel-heading ">
 						<h4 class="panel-title">
 							<a data-toggle="collapse" href="#collapse0">
 								<i class="indicator fa fa-caret-down" aria-hidden="true"></i> Price
 							</a>
 						</h4>
 					</div>
-					<div id="collapse0" class="panel-collapse collapse in" >
+					<div id="collapse0" class="panel-collapse collapse in">
 						<ul class="list-group">
 							<li class="list-group-item">
 								<div class="checkbox">
@@ -31,7 +34,7 @@
 								</div>
 							</li>
 							<li class="list-group-item">
-								<div class="checkbox" >
+								<div class="checkbox">
 									<label>
 										<input type="checkbox" value="">
 										1000$ - 2000$
@@ -39,7 +42,7 @@
 								</div>
 							</li>
 							<li class="list-group-item">
-								<div class="checkbox"  >
+								<div class="checkbox">
 									<label>
 										<input type="checkbox" value="">
 										2000$ - 6000$
@@ -47,7 +50,7 @@
 								</div>
 							</li>
 							<li class="list-group-item">
-								<div class="checkbox"  >
+								<div class="checkbox">
 									<label>
 										<input type="checkbox" value="">
 										More Than 6000$
@@ -57,14 +60,14 @@
 						</ul>
 					</div>
 
-					<div class="panel-heading " >
+					<div class="panel-heading ">
 						<h4 class="panel-title">
 							<a data-toggle="collapse" href="#collapse1">
 								<i class="indicator fa fa-caret-down" aria-hidden="true"></i> Brand
 							</a>
 						</h4>
 					</div>
-					<div id="collapse1" class="panel-collapse collapse in" >
+					<div id="collapse1" class="panel-collapse collapse in">
 						<ul class="list-group">
 							<li class="list-group-item">
 								<div class="checkbox">
@@ -75,7 +78,7 @@
 								</div>
 							</li>
 							<li class="list-group-item">
-								<div class="checkbox" >
+								<div class="checkbox">
 									<label>
 										<input type="checkbox" value="">
 										benz
@@ -83,7 +86,7 @@
 								</div>
 							</li>
 							<li class="list-group-item">
-								<div class="checkbox"  >
+								<div class="checkbox">
 									<label>
 										<input type="checkbox" value="">
 										bmw
@@ -92,7 +95,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="panel-heading" >
+					<div class="panel-heading">
 						<h4 class="panel-title">
 							<a data-toggle="collapse" href="#collapse3"><i class="indicator fa fa-caret-down" aria-hidden="true"></i> Color</a>
 						</h4>
@@ -108,7 +111,7 @@
 								</div>
 							</li>
 							<li class="list-group-item">
-								<div class="checkbox" >
+								<div class="checkbox">
 									<label>
 										<input type="checkbox" value="">
 										blue
@@ -116,7 +119,7 @@
 								</div>
 							</li>
 							<li class="list-group-item">
-								<div class="checkbox"  >
+								<div class="checkbox">
 									<label>
 										<input type="checkbox" value="">
 										green
@@ -125,7 +128,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="panel-heading" >
+					<div class="panel-heading">
 						<h4 class="panel-title">
 							<a data-toggle="collapse" href="#collapse2"><i class="indicator fa fa-caret-right" aria-hidden="true"></i> Collapsible list group</a>
 						</h4>
@@ -141,7 +144,7 @@
 								</div>
 							</li>
 							<li class="list-group-item">
-								<div class="checkbox" >
+								<div class="checkbox">
 									<label>
 										<input type="checkbox" value="">
 										8
