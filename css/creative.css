@@ -502,12 +502,8 @@ color: #f9b129 !important;}
 /*Anis work */
 #col.footerLinks {
     line-height: 2.3;
-
 }
 
-#col.col-xs-4 {
-    width: 33.33333333%;
-}
 
 #col.footerLinks-title {
     text-transform: uppercase ;
