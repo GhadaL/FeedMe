@@ -20,7 +20,8 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
-
+<!--this link added after ali division-->
+<link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
     <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
@@ -48,7 +49,11 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="#">Feed Me</a>
+		<a class="navbar-brand" href="#" style="
+    font-family: 'Pacifico', cursive !important;
+    font-size: 34px !important;
+    color: black !important;
+">Feed Me</a>
 	</div>
 
 	<div class="collapse navbar-collapse js-navbar-collapse">
@@ -98,12 +103,12 @@
                                     <h4><small>chicken fingers</small></h4>
                                     <button class="btn btn-primary" type="button">4.9 DT</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
                                 </div><!-- End Item -->
-                                <div class="item active">
+                                <div class="item">
                                     <a href="#"><img src="img/suggestion1.jpg" class="img-responsive" alt="product 2"></a>
                                     <h4><small>Double Beef Sandwish</small></h4>
                                     <button class="btn btn-primary" type="button">6.5 DT</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
                                 </div><!-- End Item -->
-                                <div class="item">
+                                <div class="item active">
                                     <a href="#"><img src="img/suggestion2.jpg" class="img-responsive" alt="product 3"></a>
                                     <h4><small>Humberger</small></h4>
                                     <button class="btn btn-primary" type="button">5 DT</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
@@ -160,10 +165,10 @@
   </form>
 </div>
 
-<li class="dropdown">
+<li class="dropdown open">
           <a href="#" role="button" onclick="document.getElementById('id02').style.display='block'">Sign up</a>
           <!-- The Modal (contains the Sign Up form) -->
-          <div id="id02" class="modal" style="display: block;">
+          <div id="id02" class="modal" style="display: none;">
             <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
             <form class="modal-content animate" action="index.php">
               <div class="container" style="
@@ -629,6 +634,7 @@ Don’t miss The FeedMe special operations to win more Yummys!</p>
         }
     }
     </script>
+
 
 
 
