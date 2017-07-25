@@ -134,7 +134,7 @@
         <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
           <a href="#" role="button" aria-expanded="false" onclick="document.getElementById('id01').style.display='block'">Log in </a>
-
+          
         </li>
 
 <!-- The Modal -->
@@ -595,19 +595,19 @@ Don’t miss The FeedMe special operations to win more Yummys!</p>
     </script>
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+
+
+    <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
     }
-}
-</script>
-
-
+    </script>
 
 
 
