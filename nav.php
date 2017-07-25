@@ -124,11 +124,9 @@
           <div id="id02" class="modal" style="display: block;">
             <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
             <form class="modal-content animate" action="index.php">
-              <div class="container" style="
-    width: 100%;
-">
-                <label><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required="">
+              <div class="container" style="width: 100%;">
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="username" required="">
 
                 <label><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="psw" required="">

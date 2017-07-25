@@ -1,6 +1,7 @@
 <?php
 session_start();
     include('db.php');
+    //$_SESSION['signed_in']=true ;
 
     if(isset($_POST['submit'])){
       $name = $_POST['username'] ;
@@ -13,6 +14,7 @@ session_start();
     else
     header('location: home.php?error');
     }
+
 ?>
 
 <!DOCTYPE html>
@@ -188,9 +190,9 @@ session_start();
           <div id="id02" class="modal" style="display: none;">
             <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
             <form class="modal-content animate" action="index.php" method="post">
-              <div class="container" style="
-    width: 100%;
-">
+
+              <div class="container" style="width: 100%;">
+
                 <label><b>Username</b></label>
                 <input type="text" placeholder="Enter Username" name="name" required="">
 
@@ -494,6 +496,10 @@ Don’t miss The FeedMe special operations to win more Yummys!</p>
     }
     </script>
 
+<<<<<<< HEAD
+</body>
+</html>
+=======
 
 
 
@@ -505,3 +511,4 @@ Don’t miss The FeedMe special operations to win more Yummys!</p>
 
 
 </body></html>
+>>>>>>> 2b9d0cadbb3038f3f4b5bc49c2e25f006a6ef3d4

@@ -1,15 +1,30 @@
 <?php
 session_start();
     include('db.php');
-    include('nav1.php');
+
 
     if(isset($_POST['sub'])){
       $name = $_POST['name'] ;
       $password = $_POST['pass'] ;
       $query = "INSERT INTO user VALUES (NULL,'$name','$password',NULL,NULL,NULL,NULL,NULL)";
       $result = mysqli_query($conn,$query);
+      $_SESSION['username']=$_POST['name'];
     }
 
+    if(isset($_POST['submit'])){
+      $name = $_POST['username'] ;
+      $pass = $_POST['psw'];
+      $result = mysqli_query($conn,"SELECT username,password FROM user where username='$name' and password='$pass'");
+    if(mysqli_num_rows($result) > 0){
+    $_SESSION['signed_in']=true ;
+    $_SESSION['username']=$_POST['username'];
+    header('location: index.php');
+    }
+    else
+    header('location: home.php?error');
+    }
+
+include('nav1.php');
 ?>
 
 <!DOCTYPE html>
