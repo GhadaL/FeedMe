@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en"><head>
     <meta charset="utf-8">
@@ -134,7 +135,7 @@
         <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
           <a href="#" role="button" aria-expanded="false" onclick="document.getElementById('id01').style.display='block'">Log in </a>
-          
+
         </li>
 
 <!-- The Modal -->
@@ -608,8 +609,6 @@ Don’t miss The FeedMe special operations to win more Yummys!</p>
         }
     }
     </script>
-
-
 
 
 
