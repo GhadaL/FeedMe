@@ -133,7 +133,38 @@
 		</ul>
         <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-          <a href="#" role="button" aria-expanded="false">Connect </a>
+          <a href="#" role="button" aria-expanded="false" onclick="document.getElementById('id01').style.display='block'">Log in </a>
+
+        </li>
+
+<!-- The Modal -->
+<div id="id01" class="modal" style="display: block;">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/index.php">
+    <div class="container" style="
+    width: 100%;
+">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required="">
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required="">
+
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1;width: 100%;">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<li class="dropdown">
+          <a href="#" role="button" aria-expanded="false">Sign up</a>
 
         </li>
         <li><a href="#">Become a partner</a></li>
@@ -152,6 +183,7 @@
     color: white;
 ">Reward pointsare just thebeginning…</p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+
             </div>
         </div>
     </header>
@@ -319,7 +351,7 @@ Don’t miss The FeedMe special operations to win more Yummys!</p>
 
     <aside class="bg-dark" id="partnerSection">
         <div class="container text-center">
-            <div class="footerTfm bgLoaded"><div class="animated bounce infinite footerTfm-title">You are a restaurant owner ?</div><div class="footerTfm-content">Join FeedMe now to increase your online visibility and attract new customers</div><div class="footerTfm-link"><a href="partner.html">Discover the services and advantages for restaurants</a></div></div>
+            <div class="footerTfm bgLoaded"><div class="animate bounce infinite footerTfm-title">You are a restaurant owner ?</div><div class="footerTfm-content">Join FeedMe now to increase your online visibility and attract new customers</div><div class="footerTfm-link"><a href="partner.html">Discover the services and advantages for restaurants</a></div></div>
         </div>
     </aside>
 
@@ -563,6 +595,20 @@ Don’t miss The FeedMe special operations to win more Yummys!</p>
     </script>
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
 
 
 
