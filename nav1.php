@@ -20,14 +20,16 @@
 					<li class="col-sm-3">
     					<ul>
 							<li class="dropdown-header">Governorates</li>
-							<li><a href="search.php?city=Ariana">Ariana</a></li>
-							<li><a href="search.php?city=Manouba">Manouba</a></li>
-							<li><a href="search.php?city=Sousse">Sousse</a></li>
-							<li><a href="search.php?city=Sfax">Sfax</a></li>
-							<li><a href="search.php?city=Touzer">Touzer</a></li>
-							<li><a href="search.php?city=Kef">Kef</a></li>
-							<li><a href="search.php?city=Kbeli">Kbeli</a></li>
-							<li><a href="search.php?city=Nabeul">Nabeul</a></li>
+							<li><a href="#">Ariana</a></li>
+                            <li><a href="#">Ben Arouss</a></li>
+                            <li><a href="#">Manouba</a></li>
+							<li><a href="#">Sousse</a></li>
+							<li><a href="#">Sfax</a></li>
+              <li><a href="#">Touzer</a></li>
+              <li><a href="#">Kef</a></li>
+              <li><a href="#">Kbeli</a></li>
+              <li><a href="#">Mahdia</a></li>
+              <li><a href="#">Nabeul</a></li>
 
 						</ul>
 					</li>
@@ -88,66 +90,18 @@
 		</ul>
         <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-          <a href="#" role="button" aria-expanded="false" onclick="document.getElementById('id01').style.display='block'">Log in </a>
+          <a href="#" role="button" aria-expanded="false" onclick="document.getElementById('id01').style.display='block'"><?=$_SESSION['username'] ?> </a>
 
         </li>
 
-<!-- The Modal -->
-<div id="id01" class="modal" style="display: none;">
-  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
-
-  <!-- Modal Content -->
-  <form class="modal-content animate" action="/index.php">
-    <div class="container" style="
-    width: 100%;
-">
-      <label><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required="">
-
-      <label><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required="">
-
-      <button type="submit">Login</button>
-      <input type="checkbox" checked="checked"> Remember me
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1;width: 100%;">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
-
-<li class="dropdown">
-          <a href="#" role="button" onclick="document.getElementById('id02').style.display='block'">Sign up</a>
-          <!-- The Modal (contains the Sign Up form) -->
-          <div id="id02" class="modal" style="display: block;">
-            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
-            <form class="modal-content animate" action="index.php">
-              <div class="container" style="
-    width: 100%;
-">
-                <label><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required="">
-
-                <label><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required="">
-
-                <label><b>Repeat Password</b></label>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" required="">
-                <input type="checkbox" checked="checked"> Remember me
-                <p>By creating an account you agree to our <a href="#">Terms &amp; Privacy</a>.</p>
-
-                <div class="clearfix">
-                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                  <button type="submit" class="signupbtn">Sign Up</button>
-                </div>
-              </div>
-            </form>
-          </div>
+        <li class="dropdown">
+          <a href="home.php" role="button" aria-expanded="false" onclick="document.getElementById('id01').style.display='block'">sign out </a>
 
         </li>
-        <li><a href="#">Become a partner</a></li>
+
+        <li>
+          <a href="#">Become a partner</a>
+        </li>
       </ul>
 	</div><!-- /.nav-collapse -->
   </nav>
