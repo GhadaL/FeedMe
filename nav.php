@@ -87,6 +87,7 @@
 
 		</ul>
         <ul class="nav navbar-nav navbar-right">
+          <?php  if (!$_SESSION['signed_in']) { ?>
         <li class="dropdown">
           <a href="#" role="button" aria-expanded="false" onclick="document.getElementById('id01').style.display='block'">Log in </a>
 
@@ -145,6 +146,20 @@
           </div>
 
         </li>
+    <?php   }else{  ?>
+        <li class="dropdown">
+
+          <a href="#" ><?=$_SESSION['username'] ?> </a>
+
+
+        </li>
+
+        <li class="dropdown">
+          <a href="home.php" role="button" aria-expanded="false" onclick="document.getElementById('id01').style.display='block'">sign out </a>
+
+        </li>
+  <?php   } ?>   
+
         <li><a href="#">Become a partner</a></li>
       </ul>
 	</div><!-- /.nav-collapse -->

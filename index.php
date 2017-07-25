@@ -24,7 +24,7 @@ session_start();
     header('location: home.php?error');
     }
 
-include('nav1.php');
+include('nav.php');
 ?>
 
 <!DOCTYPE html>
