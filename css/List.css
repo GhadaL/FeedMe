@@ -1,0 +1,81 @@
+@media only all and (min-width: 769px)
+styles.css?v=1.0.3743.0:1
+body.listing .primary {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 54.16667%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 41.66667%;
+}
+
+styles.css?v=1.0.3743.0:1
+body.listing .primary, body.listing .secondary {
+    margin-top: 1%;
+    position: relative;
+    background-color: transparent;
+}
+
+styles.css?v=1.0.3743.0:1
+body.listing .secondary {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 37.5%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 4.16667%;
+}
+
+
+styles.css?v=1.0.3743.0:1
+body.listing .primary, body.listing .secondary {
+    margin-top: 1%;
+    position: relative;
+    background-color: transparent;
+}
+.container-wrapper {
+    padding: 30px 40px 0 40px;
+    background-color: #fff;
+    position: relative;
+    top: -131px;
+    z-index: 2;
+    border-top: 3px solid #589442;
+    border-radius: 3px 3px 0 0;
+}
+
+
+element.style {
+}
+main.css:3
+.container {
+    width: 984px!important;
+    max-width: none!important;
+}
+@media (min-width: 1200px)
+main.css:1
+.container {
+    width: 1164px;
+}
+@media (min-width: 992px)
+main.css:1
+.container {
+    width: 984px;
+}
+@media (min-width: 768px)
+main.css:1
+.container {
+    width: 744px;
+}
+main.css:1
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+} 

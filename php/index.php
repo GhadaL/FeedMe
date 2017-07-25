@@ -37,11 +37,11 @@ Don’t miss TheFork special operations to win more Yums!</p>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-4 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-                        <h3>Sturdy Templates</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+                        <h3>Discover</h3>
+                        <p class="text-muted">the top rated restaurants in each area</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
@@ -176,6 +176,6 @@ Don’t miss TheFork special operations to win more Yums!</p>
     </aside>
 <?php
     include('footer.php');
-    
+
 
  ?>
