@@ -190,13 +190,9 @@ session_start();
           <div id="id02" class="modal" style="display: none;">
             <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
             <form class="modal-content animate" action="index.php" method="post">
-<<<<<<< HEAD
+
               <div class="container" style="width: 100%;">
-=======
-              <div class="container" style="
-    width: 100%;
-">
->>>>>>> 2b9d0cadbb3038f3f4b5bc49c2e25f006a6ef3d4
+
                 <label><b>Username</b></label>
                 <input type="text" placeholder="Enter Username" name="name" required="">
 
