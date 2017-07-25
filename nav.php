@@ -158,9 +158,9 @@
           <a href="home.php" role="button" aria-expanded="false" onclick="document.getElementById('id01').style.display='block'">sign out </a>
 
         </li>
-  <?php   } ?>   
+  <?php   } ?>
 
-        <li><a href="#">Become a partner</a></li>
+        <li><a href="partner">Become a partner</a></li>
       </ul>
 	</div><!-- /.nav-collapse -->
   </nav>

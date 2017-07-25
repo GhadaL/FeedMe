@@ -213,7 +213,7 @@ session_start();
           </div>
 
         </li>
-        <li><a href="#">Become a partner</a></li>
+        <li><a href="partner.php">Become a partner</a></li>
       </ul>
 	</div><!-- /.nav-collapse -->
   </nav>
