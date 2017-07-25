@@ -90,7 +90,11 @@
 		</ul>
         <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
+<<<<<<< HEAD
           <a href="#" ><?=$_SESSION['username'] ?> </a>
+=======
+          <a href="#" role="button" aria-expanded="false" onclick="document.getElementById('id01').style.display='block'"><?=$_SESSION['username'] ?> </a>
+>>>>>>> 2b9d0cadbb3038f3f4b5bc49c2e25f006a6ef3d4
 
         </li>
 

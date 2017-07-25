@@ -20,16 +20,14 @@
 					<li class="col-sm-3">
     					<ul>
 							<li class="dropdown-header">Governorates</li>
-							<li><a href="#">Ariana</a></li>
-                            <li><a href="#">Ben Arouss</a></li>
-                            <li><a href="#">Manouba</a></li>
-							<li><a href="#">Sousse</a></li>
-							<li><a href="#">Sfax</a></li>
-              <li><a href="#">Touzer</a></li>
-              <li><a href="#">Kef</a></li>
-              <li><a href="#">Kbeli</a></li>
-              <li><a href="#">Mahdia</a></li>
-              <li><a href="#">Nabeul</a></li>
+							<li><a href="search.php?city=Ariana">Ariana</a></li>
+							<li><a href="search.php?city=Manouba">Manouba</a></li>
+							<li><a href="search.php?city=Sousse">Sousse</a></li>
+							<li><a href="search.php?city=Sfax">Sfax</a></li>
+							<li><a href="search.php?city=Touzer">Touzer</a></li>
+							<li><a href="search.php?city=Kef">Kef</a></li>
+							<li><a href="search.php?city=Kbeli">Kbeli</a></li>
+							<li><a href="search.php?city=Nabeul">Nabeul</a></li>
 
 						</ul>
 					</li>

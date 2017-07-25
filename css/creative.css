@@ -407,7 +407,7 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
-<<<<<<< HEAD
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 body {
   font-family: 'Open Sans', 'sans-serif';
@@ -498,6 +498,13 @@ color: #f9b129 !important;}
     color: #fff;
     color: #f9b129 !important;
     background-color: rgba(0,0,0,.075);
+}
+#page-top > nav > div.navbar-header > a{
+
+  font-family: 'Pacifico', cursive !important;
+    font-size: 34px !important;
+    color: black !important;
+
 }
 .footerTfm .footerTfm-content {
     font-family: 'Open Sans';
