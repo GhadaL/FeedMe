@@ -1,7 +1,5 @@
 <?php
-
     include('db.php');
-
 ?>
 
 <!DOCTYPE html>
@@ -204,8 +202,7 @@
                 <h1 id="homeHeading">Find &amp; book the best restaurants with the best price</h1>
                 <hr>
                 <p style="
-    color: white;
-">Reward pointsare just thebeginning…</p>
+    color: white;">Reward pointsare just thebeginning…</p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
 
             </div>
