@@ -1,28 +1,4 @@
 <?php
-session_start();
-    include('db.php');
-
-
-    if(isset($_POST['sub'])){
-      $name = $_POST['name'] ;
-      $password = $_POST['pass'] ;
-      $query = "INSERT INTO user VALUES (NULL,'$name','$password',NULL,NULL,NULL,NULL,NULL)";
-      $result = mysqli_query($conn,$query);
-      $_SESSION['username']=$_POST['name'];
-    }
-
-    if(isset($_POST['submit'])){
-      $name = $_POST['username'] ;
-      $pass = $_POST['psw'];
-      $result = mysqli_query($conn,"SELECT username,password FROM user where username='$name' and password='$pass'");
-    if(mysqli_num_rows($result) > 0){
-    $_SESSION['signed_in']=true ;
-    $_SESSION['username']=$_POST['username'];
-    header('location: index.php');
-    }
-    else
-    header('location: home.php?error');
-    }
 
 include("nav.php");
 
@@ -234,7 +210,7 @@ include("nav.php");
              <div class="head__mask"></div>
              <div class="info__cn-txt" style="top: 1.74px;">
                  <div class="row row__large video__box1">
-                     <div class="col__4">
+                     <div class="col__4 ">
                          <h2 data-go="box__1"><strong>ATTRACT</strong> <span>NEW CUSTOMERS</span></h2>
                      </div>
                      <div class="col__4">
@@ -262,7 +238,7 @@ include("nav.php");
  	<section class="box__1">
  			<div class="row row__large">
  				<div class="col__12 box__cn">
- 					<div class="box__txt">
+ 					<div class="box__txt ">
  						<h2><strong>Attract</strong> new customers</h2>
  <p>Do you dream about seeing your restaurant full every day, both at lunchtime and at dinner? Even reselling your tables for the same service?</p>
  <p>FeedMe provides you with all the tools you need to increase your online visibility and attract new customers who would never have heard about your restaurant otherwise.</p>

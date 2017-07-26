@@ -58,7 +58,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">Feed Me</a>
+                        <a class="navbar-brand" href="index.php">Feed Me</a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->

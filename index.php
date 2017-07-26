@@ -1,28 +1,4 @@
 <?php
-session_start();
-    include('db.php');
-
-
-    if(isset($_POST['sub'])){
-      $name = $_POST['name'] ;
-      $password = $_POST['pass'] ;
-      $query = "INSERT INTO user VALUES (NULL,'$name','$password',NULL,NULL,NULL,NULL,NULL)";
-      $result = mysqli_query($conn,$query);
-      $_SESSION['username']=$_POST['name'];
-    }
-
-    if(isset($_POST['submit'])){
-      $name = $_POST['username'] ;
-      $pass = $_POST['psw'];
-      $result = mysqli_query($conn,"SELECT username,password FROM user where username='$name' and password='$pass'");
-    if(mysqli_num_rows($result) > 0){
-    $_SESSION['signed_in']=true ;
-    $_SESSION['username']=$_POST['username'];
-    header('location: index.php');
-    }
-    else
-    header('location: home.php?error');
-    }
 
 include('nav.php');
 ?>
@@ -90,9 +66,9 @@ include('nav.php');
 With our loyalty program, you now automatically earn points, called  "Yummy" for each booking.<br>
 
 1 booking = 100 Yums<br>
-1000 Yummys = 10% loyalty discount<br>
-2000 Yummys = 25% loyalty discount!<br>
-Don’t miss The FeedMe special operations to win more Yummys!</p>
+500Yummys = 10% loyalty discount<br>
+1000 Yummys = 35% loyalty discount!<br>
+Don't miss The FeedMe special operations to win more Yummys!</p>
                     <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
                 </div>
             </div>
