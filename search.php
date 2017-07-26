@@ -130,7 +130,11 @@
 
 <?php 
 
-    $city = strtoupper($_GET['city']);
+	$city = '';
+	if(isset($_GET['city'])){
+		$city = strtoupper($_GET['city']);
+	}
+    
     $sql = "SELECT * FROM adresse A JOIN resto R ON A.id = R.adresseid WHERE  '". $city."' = UPPER(city) ";
     // SELECT * FROM adresse A JOIN resto R ON A.id = R.adresseid WHERE 'sousse' = A.id
 
