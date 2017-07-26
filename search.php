@@ -154,7 +154,7 @@
             
         echo "
 <div class='row' style='margin-bottom:5px;'>
-        <a href='#'>
+        <a href='compteRestaurant.php?id=".$row['id']."'>
                         <div class='media col-md-3'>
                             <figure class='pull-left'>
                                 <img class='media-object img-rounded img-responsive' width='204' height='136' src='". $row["image_url"]."' alt='". $row["image_url"]."' >

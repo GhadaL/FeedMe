@@ -1,3 +1,28 @@
+<?php 
+    include('db.php');
+	$id = '';
+	if(isset($_GET['id'])){
+
+		$id = $_GET['id'];
+	
+    
+    $sql = "SELECT * FROM resto R JOIN adresse A ON A.id = R.adresseid WHERE  '". $id."' = R.id ";
+    // SELECT * FROM adresse A JOIN resto R ON A.id = R.adresseid WHERE 'sousse' = A.id
+    
+    $result = $conn->query($sql);
+        
+    
+    if ($result->num_rows > 0) {
+
+
+        $row = $result->fetch_array();
+       
+        
+        }
+    }
+?>
+
+
 <!DOCTYPE html>
 <html><head>
         <meta charset="UTF-8">
@@ -58,10 +83,9 @@
         <div id="top" class="starter_container bg">
             <div class="follow_container">
                 <div class="col-md-6 col-md-offset-3">
-                    <h2 class="top-title"> Parnasse
-   Restaurant	</h2>
+                    <h2 class="top-title"> <?= $row['name'] ?>	</h2>
 <!--this is static and have to be dynamic-->
-                    <h2 class="white second-title">" Tunis city "</h2>
+                    <h2 class="white second-title">" <?= ucfirst($row['city']) ?> city "</h2>
                     <hr>
                 </div>
             </div>
