@@ -83,9 +83,9 @@
         <div id="top" class="starter_container bg">
             <div class="follow_container">
                 <div class="col-md-6 col-md-offset-3">
-                    <h2 class="top-title"> <?= $row['name'] ?>	</h2>
+                    <h2 class="top-title"> <?= isset($row['name'])?$row['name']:"Dar el Jeld" ?>	</h2>
 <!--this is static and have to be dynamic-->
-                    <h2 class="white second-title">" <?= ucfirst($row['city']) ?> city "</h2>
+                    <h2 class="white second-title">" <?= isset($row['city'])?ucfirst($row['city']):"Tunis" ?> city "</h2>
                     <hr>
                 </div>
             </div>
