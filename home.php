@@ -64,7 +64,7 @@ session_start();
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="#" style="
+		<a class="navbar-brand" href="home.php" style="
     font-family: 'Pacifico', cursive !important;
     font-size: 34px !important;
     color: black !important;
@@ -243,9 +243,9 @@ session_start();
 With our loyalty program, you now automatically earn points, called  "Yummy" for each booking.<br>
 
 1 booking = 100 Yums<br>
-1000 Yummys = 10% loyalty discount<br>
-2000 Yummys = 25% loyalty discount!<br>
-Don’t miss The FeedMe special operations to win more Yummys!</p>
+500 Yummys = 10% loyalty discount<br>
+1000 Yummys = 35% loyalty discount!<br>
+Don't miss The FeedMe special operations to win more Yummys!</p>
                     <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
                 </div>
             </div>

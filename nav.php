@@ -1,3 +1,31 @@
+<?php
+session_start();
+    include('db.php');
+
+
+    if(isset($_POST['sub'])){
+      $name = $_POST['name'] ;
+      $password = $_POST['pass'] ;
+      $query = "INSERT INTO user VALUES (NULL,'$name','$password',NULL,NULL,NULL,NULL,NULL)";
+      $result = mysqli_query($conn,$query);
+      $_SESSION['username']=$_POST['name'];
+    }
+
+    if(isset($_POST['submit'])){
+      $name = $_POST['username'] ;
+      $pass = $_POST['psw'];
+      $result = mysqli_query($conn,"SELECT username,password FROM user where username='$name' and password='$pass'");
+    if(mysqli_num_rows($result) > 0){
+    $_SESSION['signed_in']=true ;
+    $_SESSION['username']=$_POST['username'];
+    header('location: index.php');
+    }
+    else
+    header('location: home.php?error');
+    }
+
+?>
+
 <!--debut nav-->
 
   <nav class="navbar navbar-inverse">
@@ -8,7 +36,7 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="#">Feed Me</a>
+		<a class="navbar-brand" href="home.php">Feed Me</a>
 	</div>
 
 	<div class="collapse navbar-collapse js-navbar-collapse">
@@ -160,7 +188,7 @@
         </li>
   <?php   } ?>
 
-        <li><a href="partner">Become a partner</a></li>
+        <li><a href="partner.php">Become a partner</a></li>
       </ul>
 	</div><!-- /.nav-collapse -->
   </nav>
