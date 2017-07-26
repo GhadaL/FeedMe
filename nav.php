@@ -36,7 +36,7 @@ session_start();
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="home.php">Feed Me</a>
+		<a class="navbar-brand" href="index.php" style="font-family: 'Pacifico', cursive !important;font-size: 34px !important;color: black !important;">Feed Me</a>
 	</div>
 
 	<div class="collapse navbar-collapse js-navbar-collapse">
