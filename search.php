@@ -1,4 +1,5 @@
 <?php
+    include('db.php');
     include('head.php');
     include('nav.php');
 
@@ -7,16 +8,17 @@
 
 <div class="container-fluid">
     <div class="row">
-		<div class="col-xs-6 col-sm-3">
-			<div id="accordion" class="panel panel-primary behclick-panel" style="
-    margin: 15px;
+
+
+		<div class="col-md-4" style="
     border-color: #f9b129;
 ">
-<div class="panel-heading" style="border-color: #f9b129;background-color: #f9b129;">
-  <h3 class="panel-title">Search Filter Restaurant</h3>
-</div>
-				<div class="panel-body">
-					<div class="panel-heading ">
+			<div id="accordion" class="panel panel-primary behclick-panel" style="border-color: #f9b129;background-color: #f9b129;">
+				<div class="panel-heading">
+					<h3 class="panel-title">Search Filter Restaurant</h3>
+				</div>
+				<div class="panel-body" >
+					<div class="panel-heading " >
 						<h4 class="panel-title">
 							<a data-toggle="collapse" href="#collapse0">
 								<i class="indicator fa fa-caret-down" aria-hidden="true"></i> Price
@@ -29,7 +31,7 @@
 								<div class="checkbox">
 									<label>
 										<input type="checkbox" value="">
-										0 - 1000$
+										0 - 10$
 									</label>
 								</div>
 							</li>
@@ -37,7 +39,7 @@
 								<div class="checkbox">
 									<label>
 										<input type="checkbox" value="">
-										1000$ - 2000$
+										10$ - 20$
 									</label>
 								</div>
 							</li>
@@ -45,7 +47,7 @@
 								<div class="checkbox">
 									<label>
 										<input type="checkbox" value="">
-										2000$ - 6000$
+										20$ - 60$
 									</label>
 								</div>
 							</li>
@@ -53,7 +55,7 @@
 								<div class="checkbox">
 									<label>
 										<input type="checkbox" value="">
-										More Than 6000$
+										More Than <60></60>$
 									</label>
 								</div>
 							</li>
@@ -63,7 +65,7 @@
 					<div class="panel-heading ">
 						<h4 class="panel-title">
 							<a data-toggle="collapse" href="#collapse1">
-								<i class="indicator fa fa-caret-down" aria-hidden="true"></i> Brand
+								<i class="indicator fa fa-caret-down" aria-hidden="true"></i> Cuisine
 							</a>
 						</h4>
 					</div>
@@ -73,7 +75,7 @@
 								<div class="checkbox">
 									<label>
 										<input type="checkbox" value="">
-										citroen
+										Cuisine française
 									</label>
 								</div>
 							</li>
@@ -81,7 +83,7 @@
 								<div class="checkbox">
 									<label>
 										<input type="checkbox" value="">
-										benz
+										cuisine tunisienne 
 									</label>
 								</div>
 							</li>
@@ -89,7 +91,7 @@
 								<div class="checkbox">
 									<label>
 										<input type="checkbox" value="">
-										bmw
+										cuisine italienne
 									</label>
 								</div>
 							</li>
@@ -97,7 +99,7 @@
 					</div>
 					<div class="panel-heading">
 						<h4 class="panel-title">
-							<a data-toggle="collapse" href="#collapse3"><i class="indicator fa fa-caret-down" aria-hidden="true"></i> Color</a>
+							<a data-toggle="collapse" href="#collapse3"><i class="indicator fa fa-caret-down" aria-hidden="true"></i> Type</a>
 						</h4>
 					</div>
 					<div id="collapse3" class="panel-collapse collapse in">
@@ -106,7 +108,7 @@
 								<div class="checkbox">
 									<label>
 										<input type="checkbox" value="">
-										red
+										Sandwichs
 									</label>
 								</div>
 							</li>
@@ -114,48 +116,7 @@
 								<div class="checkbox">
 									<label>
 										<input type="checkbox" value="">
-										blue
-									</label>
-								</div>
-							</li>
-							<li class="list-group-item">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" value="">
-										green
-									</label>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="panel-heading">
-						<h4 class="panel-title">
-							<a data-toggle="collapse" href="#collapse2"><i class="indicator fa fa-caret-right" aria-hidden="true"></i> Collapsible list group</a>
-						</h4>
-					</div>
-					<div id="collapse2" class="panel-collapse collapse">
-						<ul class="list-group">
-							<li class="list-group-item">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" value="">
-										7
-									</label>
-								</div>
-							</li>
-							<li class="list-group-item">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" value="">
-										8
-									</label>
-								</div>
-							</li>
-							<li class="list-group-item">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" value="">
-										9
+										Plat
 									</label>
 								</div>
 							</li>
@@ -163,6 +124,72 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
+        </div>
+
+        <div class="col-md-8">
+
+<?php 
+
+    $city = strtoupper($_GET['city']);
+    $sql = "SELECT * FROM adresse A JOIN resto R ON A.id = R.adresseid WHERE  '". $city."' = UPPER(city) ";
+    // SELECT * FROM adresse A JOIN resto R ON A.id = R.adresseid WHERE 'sousse' = A.id
+
+    
+    $result = $conn->query($sql);
+    
+    if ($result->num_rows > 0) {
+
+        echo " ";
+
+        while($row = $result->fetch_array()) {
+
+            $listOpen = list($hour, $min, $sec) = explode(':',$row["openTime"]) ;
+            $listClose = list($hour, $min, $sec) = explode(':',$row["closeTime"]) ;
+            $nameOfDay = date('D', strtotime($row["closeDay"]));
+
+            
+        echo "
+<div class='row' style='margin-bottom:5px;'>
+        <a href='#'>
+                        <div class='media col-md-3'>
+                            <figure class='pull-left'>
+                                <img class='media-object img-rounded img-responsive' width='204' height='136' src='". $row["image_url"]."' alt='". $row["image_url"]."' >
+                            </figure>
+                        </div>
+                        <div class='col-md-6'>
+                            <h2> ". $row["name"]." </h2>
+                            <p class='list-group-item-text'> 
+                            Adress  ". $row["street"].", ". ucfirst ($row["city"])." ". strtoupper ($row["country"])."<br>
+                            Open from ". $listOpen[0]. ":". $listOpen[1]. " 
+                            to ". $listClose[0].":". $listClose[1]."<br>
+                            Close Day ". $nameOfDay."<br>
+                            </p>
+                        </div>
+                        <div class='col-md-3 text-center'>
+                            <button type='button' class='btn btn-primary btn-lg btn-block'>Book</button>
+                            <div class='stars'>
+                                <span class='glyphicon glyphicon-star-empty'></span>
+                                <span class='glyphicon glyphicon-star-empty'></span>
+                                <span class='glyphicon glyphicon-star-empty'></span>
+                                <span class='glyphicon glyphicon-star-empty'></span>
+                                <span class='glyphicon glyphicon-star-empty'></span>
+                            </div>
+                            <p> Average ".rand(0,5)." <small> / </small> 5 </p>
+                        </div>
+                </a>
+               </div>
+            ";
+
+                }
+
+
+    } else {echo "not found";
+    }
+
+?>
+   
 </div>
+</div>
+<?php 
+    include('footer.php');
+?>
