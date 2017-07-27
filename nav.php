@@ -64,8 +64,7 @@ session_start();
 							<li class="dropdown-header">Restaurants</li>
 							<li><a href="#">Le Duc</a></li>
               <li><a href="#">Restaurant Chez Slah</a></li>
-              <li><a href="#">Dar El Jeld</a></li>
-                <li><a href="#">Dar El Jeld</a></li>
+              <li><a href="compteRestaurant.php?id=2">Dar El Jeld</a></li>
                   <li><a href="#">Restaurant le Parnasse</a></li>
                 <li><a href="#">Restaurant El-Walima</a></li>
 							<li><a href="#"></a></li>

@@ -200,9 +200,9 @@ include("nav.php");
 
 
 
-                         <div id="videoWrapper" style="width: 1349px; height: 298.48px; visibility: visible;">
-                 <!--iframe src="" data-id="144385588" id="vimeoplayer" width="1200" height="674" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen ></iframe-->
-                 <div class="no_click"></div>
+           <div id="videoWrapper" style="width: 1349px; height: 350.14px; visibility: visible;">
+     <iframe width="1200" height="674" id="youtubeplayer" src="https://www.youtube.com/embed/Cir2VsfFShQ?enablejsapi=1&amp;autoplay=1&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;controls=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="top: -203.43px; left: 0px; width: 1349px; height: 757px;"></iframe>
+     <!--iframe src="" data-id="144385588" id="vimeoplayer" width="1200" height="674" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen ></iframe-->                 <div class="no_click"></div>
              </div>
              <div id="videoBg__cn" style="width: 1349px; height: 298.48px; display: none;">
                  <div id="videoBg__hd" style="top: -229.26px; left: 0px; width: 1349px; height: 757px;"></div>
@@ -224,11 +224,6 @@ include("nav.php");
                  <div class="row row__large video__box2">
                      <p>With Feed Me, increase your restaurant's revenue simply and effectively</p>
 
-
-                     <p class="sub__p">Increase your revenue by 25% with Feed Me : <a href="#">check your Return on Investment</a></p>
-
-
-                     <a href="#" class="Btn-normal type__action">No-obligation trial</a>
                  </div>
              </div>
 

@@ -83,7 +83,7 @@ session_start();
 							<li><a href="#">Ariana</a></li>
                             <li><a href="#">Ben Arouss</a></li>
                             <li><a href="#">Manouba</a></li>
-							<li><a href="#">Sousse</a></li>
+							<li><a href="http://localhost/FeedMe/search.php?city=Sousse">Sousse</a></li>
 							<li><a href="#">Sfax</a></li>
               <li><a href="#">Touzer</a></li>
               <li><a href="#">Kef</a></li>
@@ -98,8 +98,8 @@ session_start();
 							<li class="dropdown-header">Restaurants</li>
 							<li><a href="#">Le Duc</a></li>
               <li><a href="#">Restaurant Chez Slah</a></li>
-              <li><a href="#">Dar El Jeld</a></li>
-                <li><a href="#">Dar El Jeld</a></li>
+              <li><a href="http://localhost/FeedMe/compteRestaurant.php?id=2">Dar El Jeld</a></li>
+
                   <li><a href="#">Restaurant le Parnasse</a></li>
                 <li><a href="#">Restaurant El-Walima</a></li>
 							<li><a href="#"></a></li>
@@ -256,12 +256,12 @@ Don't miss The FeedMe special operations to win more Yummys!</p>
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
                 <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
+                    <a href="http://localhost/FeedMe/search.php?city=Sousse" class="portfolio-box">
                         <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Ville de
+                                    city of
                                 </div>
                                 <div class="project-name">
                                     Sousse
@@ -276,7 +276,7 @@ Don't miss The FeedMe special operations to win more Yummys!</p>
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Ville de
+                                    city of
                                 </div>
                                 <div class="project-name">
                                     Sfax
@@ -291,7 +291,7 @@ Don't miss The FeedMe special operations to win more Yummys!</p>
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Ville de
+                                    city of
                                 </div>
                                 <div class="project-name">
                                     Tozeur
@@ -306,7 +306,7 @@ Don't miss The FeedMe special operations to win more Yummys!</p>
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Ville de
+                                    city of
                                 </div>
                                 <div class="project-name">
                                     Mehdia
@@ -321,7 +321,7 @@ Don't miss The FeedMe special operations to win more Yummys!</p>
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Ville de
+                                    city of
                                 </div>
                                 <div class="project-name">
                                     Tunis
@@ -336,7 +336,7 @@ Don't miss The FeedMe special operations to win more Yummys!</p>
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Ville de
+                                    city of
                                 </div>
                                 <div class="project-name">
                                     Nabeul
@@ -396,7 +396,7 @@ Don't miss The FeedMe special operations to win more Yummys!</p>
 
     <aside class="bg-dark" id="partnerSection">
         <div class="container text-center">
-            <div class="footerTfm bgLoaded"><div class="animate bounce infinite footerTfm-title">You are a restaurant owner ?</div><div class="footerTfm-content">Join FeedMe now to increase your online visibility and attract new customers</div><div class="footerTfm-link"><a href="partner.html">Discover the services and advantages for restaurants</a></div></div>
+            <div class="footerTfm bgLoaded"><div class="animate bounce infinite footerTfm-title">You are a restaurant owner ?</div><div class="footerTfm-content">Join FeedMe now to increase your online visibility and attract new customers</div><div class="footerTfm-link"><a href="partner.php">Discover the services and advantages for restaurants</a></div></div>
         </div>
     </aside>
 
